@@ -653,6 +653,10 @@ static dispatch_queue_t YBIBImageProcessingQueue(void) {
     _imageURL = [imageURL isKindOfClass:NSString.class] ? [NSURL URLWithString:(NSString *)imageURL] : imageURL;
 }
 
+- (void)setWaterImageurl:(NSURL *)waterImageurl {
+    _waterImageurl = [waterImageurl isKindOfClass:NSString.class] ? [NSURL URLWithString:(NSString *)waterImageurl] : waterImageurl;
+}
+
 - (NSString *)cacheKey {
     return [NSString stringWithFormat:@"%p", self];
 }
