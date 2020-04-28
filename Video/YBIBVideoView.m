@@ -115,6 +115,8 @@
     _preparingPlay = YES;
     _playFailed = NO;
     
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionAllowBluetooth error:nil];
+    
     self.playButton.hidden = YES;
     
     [self.delegate yb_preparePlayForVideoView:self];
