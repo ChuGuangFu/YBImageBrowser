@@ -26,6 +26,9 @@ typedef void (^YBIBVideoSingleTouchBlock)(YBIBVideoData *videoData);
 /// 视频 URL
 @property (nonatomic, copy, nullable) NSURL *videoURL;
 
+/// 视频描述信息
+@property (nonatomic, copy, nullable) NSString *videoDesc;
+
 /// 相册视频资源
 @property (nonatomic, strong, nullable) PHAsset *videoPHAsset;
 

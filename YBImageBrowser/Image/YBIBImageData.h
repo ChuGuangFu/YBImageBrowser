@@ -61,6 +61,9 @@ typedef void (^YBIBImageScrollViewStatusBlock)(YBIBImageData *imageData, UIScrol
 /// 网络水印图片资源
 @property (nonatomic, strong, nullable) NSURL *waterImageurl;
 
+/// 网络图片描述信息
+@property (nonatomic, copy, nullable) NSString *imageDesc;
+
 /// 修改 NSURLRequest 并返回
 @property (nonatomic, copy, nullable) YBIBRequestModifierBlock requestModifier;
 
