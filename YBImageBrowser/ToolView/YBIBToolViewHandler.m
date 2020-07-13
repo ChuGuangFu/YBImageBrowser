@@ -28,7 +28,7 @@
 @synthesize yb_currentData = _yb_currentData;
 
 - (void)yb_containerViewIsReadied {
-    [self.yb_containerView addSubview:self.topView];
+    //[self.yb_containerView addSubview:self.topView];
     [self layoutWithExpectOrientation:self.yb_currentOrientation()];
 }
 
